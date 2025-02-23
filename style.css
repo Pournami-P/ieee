@@ -1,0 +1,138 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header{
+    background: linear-gradient(135deg, #00629B, #004080);
+    background-color: #00629B;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.57s ease;
+}
+
+nav a:hover {
+    color: #FFA500;
+}
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #00629B;
+    font-size: 2em;
+    margin-bottom: 5px;
+    border-bottom: 3px solid #FFA500;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #00629B;
+    border-radius: 5px;
+    transition: transform 0.57s ease, box-shadow 5s ease;
+}
+ul li:hover {
+    transform: translateX(10px);
+    color: #FFA500;
+    transition: color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.event-image, .speaker-image{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+footer a {
+    color: #FFA500;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, textarea, button {
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+input:focus, textarea:focus {
+    border-color: #00629B;
+    outline: none;
+}
+button {
+    background-color: #00629B;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFA500;
+}
+.speaker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.speaker-card {
+    text-align: center;
+}
+
+.speaker-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
